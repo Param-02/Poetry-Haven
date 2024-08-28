@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3D4643; /* Dark green background */
+    color: #D3C3A3; /* Beige text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    background-color: #2C3E3E; /* Match the background color */
+    color: #D3C3A3; /* Match the text color */
+    padding: 15px 5px 15px 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%; /* Center the header content */
+    max-width: 1800px; /* Restrict the maximum width */
+}
+
+.logo {
+    font-style: italic;
+    font-size: 24px;
+    padding-left: -100px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+nav button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #D3C3A3; /* Beige color */
+    color: #2C3E3E; /* Dark green text color */
+}
+
+nav button:hover {
+    background-color: #C2B394; /* Slightly darker beige for hover */
+}
+
+/* Center Container for Image and Search */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    margin-top: -100px; /* Push content down to make space for the header */
+}
+
+.poetry-image {
+    max-width: 80%; /* Reduce the image size */
+    height: auto;
+    margin-bottom: 5%;
+}
+
+.search-container {
+    width: 100%;
+}
+
+.poetry-search {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px 5px;
+    border: 1px solid #D3C3A3;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #2C3E3E;
+}
+
+.sample-text{
+    padding: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2C3E3E;
+    color: #D3C3A3;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .poetry-search {
+        width: 80%;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        width: 100%;
+    }
+
+    nav button {
+        margin: 5px 4px;
+    }
+
+    .poetry-search {
+        width: 100%;
+    }
+}
